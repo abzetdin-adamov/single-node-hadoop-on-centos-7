@@ -41,6 +41,7 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 ```
 
 **HADOOP**
+```
 export HADOOP_HOME=/home/hadoop/hadoop-2.7.3
 export HADOOP_COMMON=$HADOOP_HOME
 export HADOOP_HDFS=$HADOOP_HOME
@@ -49,16 +50,20 @@ export HADOOP_YARN=$HADOOP_HOME
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
+```
 
 **7) run .bash_profile check variables**
+```
 source .bash_profile
 echo $HADOOP_HOME
 echo $JAVA_HOME
+```
 
 **8) set ssh authentication for hadoop user at specific host (FQDN) and leave passphrase empty**
+```
 ssh-keygen -t rsa
 ssh-copy-id namenode.hadoop.net
-
+```
 ##================================HADOOP CONFIG
 
 **9) Set configuration files at $HADOOP_HOME/etc/hadoop** 
@@ -67,15 +72,18 @@ ssh-copy-id namenode.hadoop.net
 vi $HADOOP_HOME/etc/hadoop/core-site.xml
 
 Add following text between <configuration> and </configuration> tags
+```
 <property>
 <name>fs.defaultFS</name>
 <value>hdfs://namenode.hadoop.net:9000/</value>
 </property>
+```
 
 ---hdfs-site.xml configuaration of HDFS
 vi $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 
 Add following text between <configuration> and </configuration> tags
+```
 <property>
     <name>dfs.data.dir</name>
     <value>file:///home/hadoop/volume/datanode</value>
@@ -84,6 +92,7 @@ Add following text between <configuration> and </configuration> tags
     <name>dfs.name.dir</name>
     <value>file:///home/hadoop/volume/namenode</value>
 </property>
+```
 
 ---mapred-site.xml to specify that we are using yarn MapReduce
 vi $HADOOP_HOME/etc/hadoop/mapred-site.xml
