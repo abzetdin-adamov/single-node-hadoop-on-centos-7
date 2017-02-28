@@ -168,8 +168,10 @@ hdfs namenode -format
 start-dfs.sh
 start-yarn.sh
 ```
-
-jps - to check java processes
+Check java processes to see active deamons of Hadoop
+```
+jps
+```
 
 ===HDFS DEAMONS:
 - NameNode
