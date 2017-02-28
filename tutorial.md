@@ -172,13 +172,13 @@ start-yarn.sh
 jps - to check java processes
 
 ===HDFS DEAMONS:
--NameNode
--DataNode
--SecondaryNameNode
+- NameNode
+- DataNode
+- SecondaryNameNode
 
 ===YARN DEAMONS:
--Resource Manager
--NodeManager
+- Resource Manager
+- NodeManager
 
 ===Getting Report on HDFS
 ```
