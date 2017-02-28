@@ -1,6 +1,6 @@
 # HADOOP on CENTOS 7
 
-##================================DOWNLOAD and CONFIGURE ENVIRONMENT
+###================================DOWNLOAD and CONFIGURE ENVIRONMENT
 
 **1) specify hostname** 
 hostnamectl set-hostname namenode
@@ -75,7 +75,7 @@ echo $JAVA_HOME
 ssh-keygen -t rsa
 ssh-copy-id namenode.hadoop.net
 ```
-##================================HADOOP CONFIG
+###================================HADOOP CONFIG
 
 **9) Set configuration files at $HADOOP_HOME/etc/hadoop** 
 
@@ -156,7 +156,7 @@ vi $HADOOP_HOME/etc/hadoop/slaves
 
 replace in our case localhost to "namenode.hadoop.net" 
 
-##================================START HADOOP
+###================================START HADOOP
 
 **13) Format HDFS**
 ```
