@@ -40,19 +40,12 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 
 --- HADOOP
 export HADOOP_HOME=/home/hadoop/hadoop-2.7.3
-
 export HADOOP_COMMON=$HADOOP_HOME
-
 export HADOOP_HDFS=$HADOOP_HOME
-
 export HADOOP_MAPRED=$HADOOP_HOME
-
 export HADOOP_YARN=$HADOOP_HOME
-
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
-
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 
 **7) run .bash_profile check variables**
