@@ -26,7 +26,7 @@ tar xfz hadoop-2.7.3.tar.gz
 cp -rf hadoop-2.7.3/* /home/hadoop/
 chown -R hadoop:hadoop /home/hadoop/
 
-**6) Login as a hadoop user and set environment variables for Hadoop and Java editing .bash_profile of home folder of user**
+**6) Login  as a hadoop user and set environment variables for Hadoop and Java editing .bash_profile of home folder of user**
 
 su - hadoop
 vi .bash_profile
