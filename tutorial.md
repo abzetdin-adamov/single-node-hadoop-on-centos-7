@@ -71,7 +71,7 @@ ssh-copy-id namenode.hadoop.net
 --- core-site.xml configuration of core Hadoop
 vi $HADOOP_HOME/etc/hadoop/core-site.xml
 
-Add following text between <configuration> and </configuration> tags
+Add following text between ```<configuration>``` and ```</configuration>``` tags
 ```
 <property>
 <name>fs.defaultFS</name>
