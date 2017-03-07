@@ -211,8 +211,8 @@ Use port 50070 to monitor HDFS (NameNode) services - storage consumption and Dat
 http://192.168.0.105:50070  
 
 Use port 8088 to monitor YARN (ResourceManager) - submitted applications and their status
-http://192.168.0.105:8088 YARN (ResourceManager)
+http://192.168.0.105:8088 
 
-Use port 8042 to monitor No 
-http://192.168.0.105:8042 NodeManager - application and assigned containers
+Use port 8042 to monitor NodeManager - application and assigned containers
+http://192.168.0.105:8042  
 
