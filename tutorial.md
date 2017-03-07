@@ -198,4 +198,21 @@ hdfs dfs -put LICENSE.txt /my_storage
 hdfs dfs -ls /my_storage/
 hdfs dfs -cat /my_storage/LICENSE.txt
 ```
+**16) Monitoring Hadoop services through web (browser)**
+Since, Centos 7 minimal (without GUI) is used as OS for VM, we can't run browser on VM. So, VM can be accessed through host-computer. To be able to access VM through HTTP interface, it is necessary to stop firewall, which is active by default.
+```
+systemctl status firewalld #checks status of firewall
+service firewalld stop #stops firewall
+service firewalld start #starts firewall again
+systemctl disable firewalld #To disable firewall completly and make not start after system reboot
+```
+
+Use port 50070 to monitor HDFS (NameNode) services - storage consumption and DataNodes status
+http://192.168.0.105:50070  
+
+Use port 8088 to monitor YARN (ResourceManager) - submitted applications and their status
+http://192.168.0.105:8088 YARN (ResourceManager)
+
+Use port 8042 to monitor No 
+http://192.168.0.105:8042 NodeManager - application and assigned containers
 
