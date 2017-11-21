@@ -10,7 +10,7 @@ vi /etc/hosts
 
 **2) Install JDK**
 ```
-curl -LO -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.rpm
+curl -LO -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm
 ```
 
 Install Package
@@ -26,7 +26,7 @@ passwd hadoop
 
 **4) Download Hadoop**
 ```
-curl -O http://apache.javapipe.com/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+curl -O http://apache.javapipe.com/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz
 ```
 
 **5) Extract archive into hadoop folder and change ownership appropriately** 
