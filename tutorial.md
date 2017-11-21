@@ -31,8 +31,8 @@ curl -O http://apache.javapipe.com/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.g
 
 **5) Extract archive into hadoop folder and change ownership appropriately** 
 ```
-tar xfz hadoop-2.7.3.tar.gz
-cp -rf hadoop-2.7.3/* /home/hadoop/
+tar xfz hadoop-2.7.4.tar.gz
+cp -rf hadoop-2.7.4/* /home/hadoop/
 chown -R hadoop:hadoop /home/hadoop/
 ```
 
@@ -53,7 +53,7 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 
 **HADOOP**
 ```
-export HADOOP_HOME=/home/hadoop/hadoop-2.7.3
+export HADOOP_HOME=/home/hadoop/hadoop-2.7.4
 export HADOOP_COMMON=$HADOOP_HOME
 export HADOOP_HDFS=$HADOOP_HOME
 export HADOOP_MAPRED=$HADOOP_HOME
