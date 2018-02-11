@@ -76,7 +76,8 @@ ssh-keygen -t rsa
 ssh-copy-id namenode.hadoop.net
 ```
 Last command will copy public key generated for user hadoop to ./.ssh/authorized_keys
-###================================HADOOP CONFIG
+
+**###================================HADOOP CONFIG**
 
 **9) Set configuration files at $HADOOP_HOME/etc/hadoop** 
 
