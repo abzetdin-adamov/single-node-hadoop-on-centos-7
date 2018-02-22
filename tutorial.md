@@ -3,7 +3,7 @@
 ###================================DOWNLOAD and CONFIGURE ENVIRONMENT
 
 **1) specify hostname** 
-hostnamectl set-hostname namenode
+hostnamectl set-hostname `namenode.hadoop.net`
 
 specify IP address and FQDN
 vi /etc/hosts
@@ -12,6 +12,7 @@ vi /etc/hosts
 ```
 curl -LO -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm
 ```
+Note: the reference for JDK download maybe outdated, to get new references visit http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html or http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 Install Package
 ```
